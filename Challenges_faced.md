@@ -7,7 +7,7 @@ During this project, several practical and computational challenges were encount
 
 ## 1. Computational Resource Limitations
 
-The initial experiments were attempted on a local laptop CPU. However, the computational requirements of AutoAttack and adversarially robust models were too high, making execution extremely slow and in many cases infeasible.
+The initial experiments were attempted on our local laptops CPUs. However, the computational requirements of AutoAttack and adversarially robust models were too high, making execution extremely slow and in many cases infeasible.
 
 As a result, training and evaluation could not be completed efficiently on CPU-based environments.
 
@@ -26,14 +26,14 @@ Despite these attempts, execution was still unstable or incomplete due to resour
 
 ## 3. Transition to Google Colab
 
-Finally, the project was migrated to Google Colab using a T4 GPU runtime. This provided a more stable environment for execution.
+Finally, the project was migrated to Google Colab using a T4 GPU runtime. This provided us a more stable environment for execution.
 
 However, even with this improvement, significant computational limitations remained due to:
 
 - High execution time per model using AutoAttack
 - Memory constraints during evaluation
 - Large model sizes from RobustBench
-
+- The "Carmon2019Unlabeled", "Rebuffi2021Fixing_70_16_cutmix_extra" models took us 6h running and unfortiantly out of storage at the last epsilon itiration of the second model so we assumed an approximate accuracy.
 ---
 
 ## 4. Adjustments Made to Overcome Limitations
@@ -42,8 +42,8 @@ To ensure successful completion of the experiments, several compromises were mad
 
 - Reduced dataset size from 100–200 images to 50 images per evaluation
 - Executed models individually instead of running all models together
-- Selected a limited number of models due to computational cost
-- Saved intermediate results to avoid re-running expensive computations
+- Selected the less hiviest 5  models due to computational cost
+
 
 ---
 
