@@ -69,15 +69,22 @@ For each model:
 - Evaluating robustness using a single epsilon value may not fully reflect model behavior under adversarial attacks.
 
 ---
+## Model ZOO
 
-## Repository Structure
+The project uses robust models from RobustBench and adversarial evaluation with AutoAttack.
 
-```text
-.
-├── notebooks/
-├── figures/
-├── results/
-├── robust_accuracy.csv
-├── rankings.csv
-├── requirements.txt
-└── README.md
+Install the required libraries using:
+
+```bash
+pip install git+https://github.com/RobustBench/robustbench.git
+pip install autoattack
+pip install pandas matplotlib seaborn
+```
+
+Main frameworks and libraries used in this project:
+- PyTorch
+- RobustBench
+- AutoAttack
+- Pandas
+- Matplotlib
+- Seaborn
