@@ -1,3 +1,9 @@
+# Final Results Table
+
+This table summarizes clean accuracy and robust accuracy under different ℓ∞ perturbation strengths (AutoAttack evaluation).
+
+---
+
 ## Main Results
 
 | Model | Clean | 1/255 | 4/255 | 8/255 | 12/255 | 16/255 |
@@ -9,3 +15,9 @@
 | Engstrom2019Robustness | 90% | 86% | 76% | 48% | 24% | 12% |
 
 ---
+
+## Key Observation
+
+- Robust accuracy decreases as epsilon increases for all models.
+- Rankings are not fully stable across different perturbation strengths.
+- Rebuffi2021Fixing_70_16_cutmix_extra consistently performs best across all settings.
