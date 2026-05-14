@@ -1,4 +1,4 @@
-# robustbench-MLSec-Project
+# Robustbench-MLSec-Project
 # CIFAR-10 Adversarial Robustness Evaluation using AutoAttack
 
 ## Project Overview
